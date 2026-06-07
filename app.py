@@ -4,6 +4,9 @@ import numpy as np
 import joblib
 from datetime import datetime
 from model import TemporalFeatureExtractor
+import sys
+
+sys.modules['__main__'].TemporalFeatureExtractor = TemporalFeatureExtractor
 
 # Configuration de la page
 st.set_page_config(
